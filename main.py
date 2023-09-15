@@ -46,7 +46,7 @@ distance3 = face_recognition.face_distance([encodeHCM], encodeDN_check)
 cv.putText(imgDN_check, f"{result3[0]}, Similar: {round((1-distance3[0])*100,2)},%", (50, 50), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
 # Hiển thị ảnh
-# cv.imshow('Screen1', imgHCM)
+cv.imshow('Screen1', imgHCM)
 cv.imshow('Screen2', imgHCM_check)
 cv.imshow('Screen3', imgVNG_check)
 cv.imshow('Screen4', imgDN_check)
